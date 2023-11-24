@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Exo 2", sans-serif;
+}
+
+/* Navbar */
+/* Navbar */
+nav{
+    height: 7vh;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212322;
+    color: rgb(179, 179, 179);
+    padding: 0 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Navbar logo */
+.nav-logo{
+    font-size: 30px;
+}
+.nav-logo a{
+    text-decoration: none;
+    color: #bdbdbd;
+}
+
+
+/* Navbar list */
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    transition: all 0.3s;
+}
+
+.nav-list a:hover{
+    color: Pink;
+}
+.nav-user-stuffs{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+/* FOr Responsive */
+#responsive-list {
+    background-color: rgba(0, 0, 0, 0.366);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    display: none;
+  }
+  #responsive-list:target {
+    display: block;
+  }
+  
+  .resp-nav-list {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    list-style: none;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  #close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  
+  .resp-nav-list a {
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+    transition: all 0.3s;
+  }
+  .resp-nav-list a:hover {
+    color: rgb(0, 183, 255);
+  }
+
+  .bi-three-dots-vertical {
+    display: none;
+  }
+
+/* Filter Container */
+.filter-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid;
+}
+
+.filter-container select {
+  height: 30px;
+  width: 120px;
+}
+
+.filter-container div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.product-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  width: calc(100% / 4 - 15px);
+  /* flex: 1; */
+  /* height: 400px; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product img {
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.product a{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #212322;
+    height: 35px;
+    border-radius: 5px;
+    color: #ededed;
+    text-decoration: none;
+    line-height: 35px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #212322;
+  /* padding: 60px 0px; */
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid white;
+  width: 100%;
+  padding: 50px 0;
+}
+.subscribe h2 {
+  color: #dbdbdb;
+  margin: 10px;
+}
+
+.subscribe p {
+  color: #bdbdbd;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.subscribe-input-container {
+  height: 40px;
+  display: flex;
+  border: 1px solid rgb(141, 141, 141);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 450px;
+}
+
+.subscribe-input-container input {
+  height: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+}
+.subscribe-input-container button {
+  width: 100px;
+  color: #ededed;
+  background-color: #c6904f;
+  border: none;
+  outline: none;
+}
+
+/* Contact us */
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+
+.contact-us ul {
+  list-style: none;
+}
+
+.contact-us ul li {
+  color: rgb(203, 203, 203);
+}
+.contact-us ul li h2 {
+  margin-bottom: 20px;
+  color: #cfcfcf;
+}
+
+.follow-us {
+  display: flex;
+  gap: 10px;
+  font-size: 25px;
+  color: #cfcfcf;
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .product{
+        width: calc(100% / 3 - 15px);
+    }
+}
+
+
+
+@media screen and (max-width:700px) {
+    .nav-user-stuffs{
+        display: none;
+    }
+    .nav-list{
+        display: none;
+    }
+    .bi-three-dots-vertical {
+        display: block;
+        color: #bdbdbd;
+      }
+    .product{
+        width: calc(100% / 2 - 10px);
+    }
+    .subscribe-input-container {
+        width: calc(100% - 20px);
+      }
+    .contact-us{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+    }
+    .contact-us ul{
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+    .product{
+        width: 100%;
+    }
+
+}

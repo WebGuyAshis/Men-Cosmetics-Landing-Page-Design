@@ -1,0 +1,549 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Navbar */
+nav{
+    height: 7vh;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212322;
+    color: rgb(179, 179, 179);
+    padding: 0 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Navbar logo */
+.nav-logo{
+    font-size: 30px;
+}
+.nav-logo a{
+    text-decoration: none;
+    color: #bdbdbd;
+}
+
+
+/* Navbar list */
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    transition: all 0.3s;
+}
+
+.nav-list a:hover{
+    color: Pink;
+}
+.nav-user-stuffs{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+/* FOr Responsive */
+#responsive-list {
+    background-color: rgba(0, 0, 0, 0.366);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    display: none;
+  }
+  #responsive-list:target {
+    display: block;
+  }
+  
+  .resp-nav-list {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    list-style: none;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  #close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  
+  .resp-nav-list a {
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+    transition: all 0.3s;
+  }
+  .resp-nav-list a:hover {
+    color: rgb(0, 183, 255);
+  }
+
+  .bi-three-dots-vertical {
+    display: none;
+  }
+
+  
+main{
+    width: 100%;
+}
+
+/* Landing Page */
+
+.landing-page{
+    height: 100vh;
+}
+.landing-page-img{
+    width: 200px;
+    /* background-color: #4e8368; */
+    height: 100%;
+    /* overflow: hidden; */
+    margin-right: 100px;
+}
+.landing-page-img img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+.product-adv{
+    background-color: #212322;
+    color: rgb(207, 207, 207);
+    height: 40%;
+
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.landing-page-adv h1{
+    font-size: 35px;
+}
+.landing-page-adv p{
+    font-size: 12px;
+    color: rgb(166, 166, 166);
+
+}
+.landing-page-adv a{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 20px;
+    background-color: #c6904f;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+
+/*  */
+
+.product-adv-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-quality{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    /* width: 100vw; */
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.product-quality li a{
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-quality li a img{
+    height: 80px;
+}
+
+
+/* Forulae Advirtisement */
+
+.formulae-adv{
+    text-align: center;
+    margin-top: 20px;
+}
+.formulae-adv h1{
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.formulae-adv p{
+    text-align: center;
+}
+
+
+
+/* Products benefits Container */
+.product-benefits{
+    background-color: #212322;
+    padding: 40px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.product-benefits h3{
+    color: #e6e6e6;
+}
+.product-benefits p{
+    color: #c8c8c8;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+
+/* Ingredients */
+.ingredients{
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.ingredients-content{
+    display: flex;
+    gap: 10px;
+}
+
+/* .ingredients-data-left, .ingredients-data-right{
+} */
+.ingredients-data-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+    gap: 10px;
+}
+.ingredients-data-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.ingredients-content-data{
+    /* margin-top: 20px; */
+    max-width: 300px;
+}
+
+.ingredients-content-data h3{
+    font-size: 20px;
+}
+
+.ingredients-content-data p{
+    font-size: 14px;
+}
+
+.product-adv-img{
+    width: 370px;
+    /* height: 500px; */
+    /* background-color: #4e8368; */
+    display: flex;
+    align-items: center;
+}
+.product-adv-img img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+.ingredients-btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #212322;
+    color: #e6e6e6;
+    /* margin-top: 20px; */
+    border-radius: 5px;
+
+}
+
+
+/* Best Sellers */
+.best-sellers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.best-selling-items{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.best-selling-items h4{
+    color: #212322;
+    margin-bottom: 5px;
+}
+.best-product-details{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.best-product-details:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.best-product-details img{
+    min-width: 200px;
+    height: 200px;
+    /* background-color: #c8c8c8; */
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* Buy Product */
+
+.buy-product{
+    background-color: #212322;
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.buy-product img{
+    min-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.buy-product-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.buy-product-details h2, h4{
+    color: #dbdbdb;
+}
+
+.buy-product-details p{
+    color: #b2b2b2;
+}
+
+.buy-product-details .price{
+    color: #3bae73;
+}
+
+.buy-product-details .shop-now-btn{
+    background-color: #c6904f;
+    width: 100px;
+    height: 35px;
+    text-decoration: none;
+    color: #e6e6e6;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+}
+
+
+/* About US */
+.about-us{
+margin-top: 40px;
+/* display: flex;
+flex-direction: column;
+align-items: center; */
+text-align: center;
+}
+
+.about-us h1{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.about-us p{
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+.about-us .our-story{
+    height: 300px;
+    width: 100%;
+}
+
+.about-us .our-story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* Footer */
+footer{
+    background-color: #212322;
+    /* padding: 60px 0px; */
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid white;
+    width: 100%;
+    padding: 50px 0;
+}
+.subscribe h2{
+    color: #dbdbdb;
+    margin: 10px;
+}
+
+.subscribe p{
+    color: #bdbdbd;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.subscribe-input-container{
+    height: 40px;
+    display: flex;
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 450px;
+}
+
+.subscribe-input-container input{
+    height: 100%;
+    flex: 1;
+    border: none;
+    outline: none;
+}
+.subscribe-input-container button{
+    width: 100px;
+    color: #ededed;
+    background-color: #c6904f;
+    border: none;
+    outline: none;
+}
+
+
+
+/* Contact us */
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.contact-us ul{
+    list-style: none;
+}
+
+.contact-us ul li{
+    color: rgb(203, 203, 203);
+}
+.contact-us ul li h2{
+    margin-bottom: 20px;
+    color: #cfcfcf;
+}
+
+.follow-us{
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    color: #cfcfcf;
+}
+
+
+@media screen and (max-width:800px) {
+    .nav-user-stuffs{
+        display: none;
+    }
+    .nav-list{
+        display: none;
+    }
+    .bi-three-dots-vertical {
+        display: block;
+        color: #bdbdbd;
+      }
+      .subscribe-input-container {
+        width: calc(100% - 20px);
+      }
+    .contact-us{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+    }
+    .contact-us ul{
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width:600px){
+    .landing-page-adv h1{
+        font-size: 20px;
+    }
+    .landing-page-img{
+        /* background-color: #b2b2b2; */
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .landing-page-img img{
+        object-fit: cover;
+        object-position: center;
+
+        height: auto;
+        width: 100%;
+    }
+    .product-quality li a img{
+        height: 50px;
+    }
+
+    .formulae-adv h1{
+        font-size: 30px;
+    }
+
+    .ingredients-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ingredients-data-left{
+        text-align: start;
+    }
+    .buy-product {
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
